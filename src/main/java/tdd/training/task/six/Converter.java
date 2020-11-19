@@ -6,14 +6,14 @@ package tdd.training.task.six;
  */
 public class Converter {
     public int convertFootToInch(int foot) {
-        return (int) LengthUnit.ofFoot(foot).convertToInch();
+        return (int) LengthUnit.of(foot, "Foot").convertToInch();
     }
 
     public int convertYardToFoot(int yard) {
-        return (int) LengthUnit.ofYard(yard).convertToFoot();
+        return (int) LengthUnit.of(yard, "Yard").convertToFoot();
     }
 
     public int convertYardToInch(int yard) {
-        return (int) LengthUnit.ofYard(yard).convertToInch();
+        return (int) LengthUnit.of(yard, "Yard").convertToInch();
     }
 }
